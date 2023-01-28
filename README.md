@@ -15,7 +15,7 @@ Local testing
 
 To test it locally, you need to start a local web server.
 
-You can do it with Python for example by running in `./src`:
+You can do it with Python for example by running:
 
 ```
 python3 -m http.server
@@ -24,4 +24,4 @@ python3 -m http.server
 Publishing it
 -------------
 
-To publish it and host it somewhere, you need to manually upload the content of the `src` folder to your hosting space.
+To publish it and host it somewhere, you need to manually upload the files to your hosting space.

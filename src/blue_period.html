@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blue Period</title>
+<script type="module">
+import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#blue-gallery',
+  children: 'a',
+  pswpModule: () => import('./photoswipe/photoswipe.esm.js')
+});
+lightbox.init();
+</script>
+<link rel="stylesheet" href="./photoswipe/photoswipe.css">
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div class="body-container">
+  <header class="padded">
+    <a class="back-arrow" href="index.html">&larr;</a>
+  </header>
+  <main class="main-container padded" id="blue-gallery">
+    <h1>
+      The blue period
+    </h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.
+    </p>
+    <div class="image-grid w-full">
+      <a href="paintings/2022-1.png" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
+	<img src="paintings/2022-1.png" alt="">
+      </a>
+      <a href="paintings/2022-2.png" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
+	<img src="paintings/2022-2.png" alt="">
+      </a>
+      <a href="paintings/2022-3.png" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
+	<img src="paintings/2022-3.png" alt="">
+      </a>
+      <a href="paintings/2022-4.png" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
+	<img src="paintings/2022-4.png" alt="">
+      </a>
+      <a href="paintings/2022-5.png" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
+	<img src="paintings/2022-5.png" alt="">
+      </a>
+    </div>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.
+    </p>
+    <a href="paintings/2022-1.png" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
+    <img src="paintings/2022-1.png" alt="">
+    </a>
+  </main>
+  <footer class="footer">
+    <a href="#">Instagram</a> / <a href="mailto:someone@example.com">Email</a>
+  </footer>
+</div>
+</body>
+</html>

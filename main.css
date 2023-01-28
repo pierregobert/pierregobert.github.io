@@ -380,6 +380,11 @@ object {
   width: 100%;
 }
 
+a img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
 .image-big {
   grid-row: span 2;
   grid-column: span 2;

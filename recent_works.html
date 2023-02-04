@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pierre Gobert - Recent works</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<script type="module">
+import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#new-gallery',
+  children: 'a',
+  pswpModule: () => import('./photoswipe/photoswipe.esm.js')
+});
+lightbox.init();
+</script>
+<link rel="stylesheet" href="./photoswipe/photoswipe.css">
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div class="body-container">
+  <header class="padded">
+    <a class="back-arrow" href="index.html">&larr;</a>
+  </header>
+  <main class="main-container small-images padded" id="new-gallery">
+    <h1>
+      Recent works
+    </h1>
+    <a href="paintings/2021_001.jpg" data-pswp-width="2884" data-pswp-height="1772" data-cropped="true" target="_blank">
+      <img src="paintings/2021_001.jpg" alt="">
+    </a>
+  </main>
+  <footer class="footer">
+    <a href="mailto:pierregobert.works@gmail.com">pierregobert.works@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>

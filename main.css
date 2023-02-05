@@ -371,17 +371,15 @@ a img:hover {
 }
 
 .artist-name {
-  display: flex;
-  align-items: flex-end;
-  font-size: min(max(35px, 5.5vw), 70px);
+  position: absolute;
+  font-size: min(max(35px, 5.5vw), 50px);
   font-family: Nimbus Sans;
   font-style: normal;
   font-weight: 400;
   line-height: 0.9;
-  position: relative;
-  top: 10px;
+  bottom: 20px;
   padding-left: 20px;
-  padding-top: 30px;
+  color: white;
 }
 
 body {
@@ -437,6 +435,11 @@ h1 {
 }
 
 .main-image {
+  max-width: 100%;
+  position: relative;
+}
+
+.main-image img {
   max-width: 100%;
 }
 

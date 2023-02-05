@@ -461,6 +461,10 @@ h1 {
   font-size: 40px;
 }
 
+.main-image {
+  max-width: 100%;
+}
+
 .small-images img {
   max-width: 300px;
 }

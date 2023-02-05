@@ -361,33 +361,9 @@ object {
   flex-basis: 100%;
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 7px;
-  grid-row-gap: 7px;
-}
-
-.image-grid a {
-  aspect-ratio: 1;
-}
-
-.image-grid a img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
 a img {
   max-width: 90vw;
   max-height: 90vh;
-}
-
-.image-big {
-  grid-row: span 2;
-  grid-column: span 2;
 }
 
 a img:hover {
@@ -440,7 +416,6 @@ nav.main-links a:hover {
 .main-container {
   flex: 1;
   padding-top: 5vw;
-  #border: 1px solid red;
 }
 
 .main-container p {
@@ -488,28 +463,13 @@ h1 {
   flex-wrap: wrap;
 }
 
-.artist-description-container {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 25px;
-}
-
 .links-container {
   display: flex;
   flex-direction: row-reverse;
   padding: 25px;
 }
 
-.artist-description {
-  max-width: 500px;
-  text-align: justify;
-}
-
 @media (min-width: 640px) {
-  .artist-description-container {
-    padding-right: 0px;
-  }
-
   .links-container {
     padding-right: 0px;
   }

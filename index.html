@@ -3,17 +3,8 @@
 <head>
 <title>Pierre Gobert</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-language" content="en">
 <meta charset="UTF-8">
-<script type="module">
-import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#main-gallery',
-  children: 'a',
-  pswpModule: () => import('./photoswipe/photoswipe.esm.js')
-});
-lightbox.init();
-</script>
-<link rel="stylesheet" href="./photoswipe/photoswipe.css">
 <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -22,26 +13,12 @@ lightbox.init();
   <main class="main-container">
     <div class="responsive-container">
       <div class="responsive-2/3">
-        <div class="image-grid" id="main-gallery">
-          <a href="images/artist.webp" class="image-big" data-pswp-width="1024" data-pswp-height="754" data-cropped="true" target="_blank">
-            <img src="images/artist.webp" alt="">
-          </a>
-          <a href="paintings/2023-2.webp" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
-            <img src="paintings/2023-2.webp" alt="">
-          </a>
-          <a href="paintings/2023-3.webp" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
-            <img src="paintings/2023-3.webp" alt="">
-          </a>
-          <a href="paintings/2023-4.webp" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
-            <img src="paintings/2023-4.webp" alt="">
-          </a>
-          <a href="paintings/2023-5.webp" data-pswp-width="960" data-pswp-height="640" data-cropped="true" target="_blank">
-            <img src="paintings/2023-5.webp" alt="">
-          </a>
+        <div class="main-image">
+          <img src="images/chevalet.webp" alt="Image of an easel">
+          <div class="artist-name">
+            Pierre Gobert
+          </div>
         </div>
-      </div>
-      <div class="artist-name responsive-1/3">
-        Pierre<br/>Gobert
       </div>
     </div>
     <div class="responsive-container">

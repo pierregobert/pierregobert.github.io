@@ -396,12 +396,12 @@ nav.main-links ul {
 }
 
 nav.main-links a {
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 nav.main-links a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .body-container {

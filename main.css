@@ -38,7 +38,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -361,25 +361,6 @@ object {
   flex-basis: 100%;
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 7px;
-  grid-row-gap: 7px;
-}
-
-.image-grid a {
-  aspect-ratio: 1;
-}
-
-.image-grid a img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
 a img {
   max-width: 90vw;
   max-height: 90vh;
@@ -387,27 +368,19 @@ a img {
   padding-bottom: 20px;
 }
 
-.image-big {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
 a img:hover {
   transform: scale(0.98);
 }
 
 .artist-name {
-  display: flex;
-  align-items: flex-end;
-  font-size: min(max(35px, 5.5vw), 70px);
-  font-family: Nimbus Sans;
+  position: absolute;
+  font-size: min(max(35px, 5.5vw), 50px);
   font-style: normal;
   font-weight: 400;
   line-height: 0.9;
-  position: relative;
-  top: 10px;
+  bottom: 20px;
   padding-left: 20px;
-  padding-top: 30px;
+  color: white;
 }
 
 body {
@@ -425,12 +398,12 @@ nav.main-links ul {
 }
 
 nav.main-links a {
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 nav.main-links a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .body-container {
@@ -442,7 +415,6 @@ nav.main-links a:hover {
 .main-container {
   flex: 1;
   padding-top: 5vw;
-  #border: 1px solid red;
 }
 
 .main-container p {
@@ -461,6 +433,15 @@ h1 {
 
 .back-arrow {
   font-size: 40px;
+}
+
+.main-image {
+  max-width: 100%;
+  position: relative;
+}
+
+.main-image img {
+  max-width: 100%;
 }
 
 .small-images img {
@@ -486,12 +467,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-.artist-description-container {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 25px;
-}
-
 .links-container {
   display: flex;
   flex-direction: row-reverse;
@@ -509,10 +484,6 @@ p.painting-description {
 }
 
 @media (min-width: 640px) {
-  .artist-description-container {
-    padding-right: 0px;
-  }
-
   .links-container {
     padding-right: 0px;
   }

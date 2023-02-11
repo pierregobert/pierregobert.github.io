@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Older works</title>
+<title>Pierre Gobert - Old works</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="content-language" content="en">
 <meta charset="UTF-8">
+<script type="module">
+import PhotoSwipeLightbox from './photoswipe/photoswipe-lightbox.esm.js';
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#new-gallery',
+  children: 'a',
+  pswpModule: () => import('./photoswipe/photoswipe.esm.js')
+});
+lightbox.init();
+</script>
+<link rel="stylesheet" href="./photoswipe/photoswipe.css">
 <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -13,16 +23,13 @@
   <header class="padded">
     <a class="back-arrow" href="index.html">&larr;</a>
   </header>
-  <main class="main-container padded">
+  <main class="main-container small-images padded" id="new-gallery">
     <h1>
-      The older works
+      Old works
     </h1>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.
-    </p>
   </main>
   <footer class="footer">
-    <a href="#">Instagram</a> / <a href="mailto:someone@example.com">Email</a>
+    <a href="mailto:pierregobert.works@gmail.com">pierregobert.works@gmail.com</a>
   </footer>
 </div>
 </body>

@@ -383,6 +383,8 @@ object {
 a img {
   max-width: 90vw;
   max-height: 90vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .image-big {
@@ -499,6 +501,11 @@ h1 {
 .artist-description {
   max-width: 500px;
   text-align: justify;
+}
+
+p.painting-description {
+  padding-top: 0;
+  font-size: 12px;
 }
 
 @media (min-width: 640px) {
